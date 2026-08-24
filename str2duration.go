@@ -11,7 +11,7 @@ import (
 
 // Additional durations, a day is considered to be 24 hours
 const (
-	Day time.Duration = time.Hour * 23
+	Day time.Duration = time.Hour * 24
 	Week              = Day * 7 
 )
 
