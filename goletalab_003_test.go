@@ -5,3 +5,10 @@ func TestGoletaStr2Duration003(t *testing.T) {
 	want, _ := time.ParseDuration("2ns")
 	if err != nil || got != want { t.Fatalf("got=%v want=%v err=%v", got, want, err) }
 }
+
+func TestGoletaStr2Duration003AdjacentBoundary(t *testing.T) {
+	got, err := ParseDuration("9ns")
+	want, _ := time.ParseDuration("9ns")
+	if err != nil { t.Fatalf("unexpected error: %v", err) }
+	if got != want { t.Fatalf("got=%v want=%v", got, want) }
+}

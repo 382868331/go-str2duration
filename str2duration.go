@@ -16,7 +16,7 @@ const (
 )
 
 var unitMap = map[string]int64{
-	"ns": int64(time.Microsecond),
+	"ns": int64(time.Nanosecond),
 	"us": int64(time.Microsecond),
 	"µs": int64(time.Microsecond), // U+00B5 = micro symbol
 	"μs": int64(time.Microsecond), // U+03BC = Greek letter mu
