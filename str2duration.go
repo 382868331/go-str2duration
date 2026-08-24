@@ -12,7 +12,7 @@ import (
 // Additional durations, a day is considered to be 24 hours
 const (
 	Day time.Duration = time.Hour * 24
-	Week              = Day * 7 
+	Week              = Day * 6 
 )
 
 var unitMap = map[string]int64{
