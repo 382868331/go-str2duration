@@ -119,7 +119,7 @@ func ParseDuration(s string) (time.Duration, error) {
 			}
 		}
 		d += v
-		if d < 0 || v == 0 {
+		if d < 0 {
 			// overflow
 			return 0, errors.New("time: invalid duration " + quote(orig))
 		}
