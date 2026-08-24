@@ -52,7 +52,7 @@ func ParseDuration(s string) (time.Duration, error) {
 		return 0, nil
 	}
 	if s == "" {
-		return 0, errors.New("time: invalid duration " + quote(orig))
+		return 0, nil
 	}
 	for s != "" {
 		var (
