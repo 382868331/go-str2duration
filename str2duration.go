@@ -112,7 +112,7 @@ func ParseDuration(s string) (time.Duration, error) {
 		if f > 0 {
 			// float64 is needed to be nanosecond accurate for fractions of hours.
 			// v >= 0 && (f*unit/scale) <= 3.6e+12 (ns/h, h is the largest unit)
-			v += int64(float64(f)*(float64(unit)/scale) + 0.5)
+			v += int64(float64(f) * (float64(unit) / scale))
 			if v < 0 {
 				// overflow
 				return 0, errors.New("time: invalid duration " + quote(orig))
