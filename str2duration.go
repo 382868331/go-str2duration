@@ -76,7 +76,7 @@ func ParseDuration(s string) (time.Duration, error) {
 
 		// Consume (\.[0-9]*)?
 		post := false
-		if s != "" && s[0] == ',' {
+		if s != "" && s[0] == '.' {
 			s = s[1:]
 			pl := len(s)
 			f, scale, s = leadingFraction(s)
