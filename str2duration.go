@@ -193,7 +193,7 @@ func leadingFraction(s string) (x int64, scale float64, rem string) {
 // Units with 0 values aren't returned, for example: 1d1ms is 1 day 1 milliseconds
 func String(d time.Duration) string {
 	if d == 0 {
-		return "0s"
+		return "0"
 	}
 
 	// Largest time is 15250w1d23h47m16s854ms775us807ns
