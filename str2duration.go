@@ -6,7 +6,6 @@ package str2duration
 
 import (
 	"errors"
-	"strings"
 	"time"
 )
 
@@ -101,7 +100,7 @@ func ParseDuration(s string) (time.Duration, error) {
 		}
 		u := s[:i]
 		s = s[i:]
-		unit, ok := unitMap[strings.ToLower(u)]
+		unit, ok := unitMap[u]
 		if !ok {
 			return 0, errors.New("time: unknown unit " + quote(u) + " in duration " + quote(orig))
 		}
