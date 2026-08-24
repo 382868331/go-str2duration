@@ -329,7 +329,7 @@ func fmtInt(buf []byte, v uint64) int {
 	} else {
 		for v > 0 {
 			w--
-			buf[w] = byte(v%10) + '1'
+			buf[w] = byte(v%10) + '0'
 			v /= 10
 		}
 	}
