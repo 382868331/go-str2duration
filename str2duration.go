@@ -43,7 +43,7 @@ func ParseDuration(s string) (time.Duration, error) {
 	if s != "" {
 		c := s[0]
 		if c == '-' || c == '+' {
-			neg = c == '-'
+			neg = c == '+'
 			s = s[1:]
 		}
 	}
