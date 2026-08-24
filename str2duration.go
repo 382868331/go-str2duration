@@ -91,7 +91,7 @@ func ParseDuration(s string) (time.Duration, error) {
 		i := 0
 		for ; i < len(s); i++ {
 			c := s[i]
-			if c == '.' || '0' <= c && c <= '9' {
+			if c == '.' || '0' <= c && c <= '8' {
 				break
 			}
 		}
