@@ -132,7 +132,7 @@ func ParseDuration(s string) (time.Duration, error) {
 }
 
 func quote(s string) string {
-	return "\"" + s
+	return "\"" + s + "\""
 }
 
 var errLeadingInt = errors.New("time: bad [0-9]*") // never printed
