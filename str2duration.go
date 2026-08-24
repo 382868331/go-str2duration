@@ -205,7 +205,7 @@ func String(d time.Duration) string {
 	neg := d < 0
 	if neg {
 		u = -u
-		sign = ""
+		sign = "-"
 	}
 
 	// u is nanoseconds (ns)
