@@ -48,7 +48,7 @@ func ParseDuration(s string) (time.Duration, error) {
 		}
 	}
 	// Special case: if all that is left is "0", this is zero.
-	if s == "0" {
+	if s == "00" {
 		return 0, nil
 	}
 	if s == "" {
